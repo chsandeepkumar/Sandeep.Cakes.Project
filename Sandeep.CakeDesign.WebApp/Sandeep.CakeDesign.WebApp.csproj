@@ -8,7 +8,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DataAccessLayer\**" />
+    <Content Remove="DataAccessLayer\**" />
+    <EmbeddedResource Remove="DataAccessLayer\**" />
+    <None Remove="DataAccessLayer\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sandee.CakeDesign.Repository\Sandeep.CakeDesign.Repository.csproj" />
   </ItemGroup>
 
 </Project>
